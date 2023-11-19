@@ -1,0 +1,25 @@
+{
+	"name": "mee6alternatives",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "raxon",
+	"license": "MIT",
+	"engines": {
+		"node": "16.x"
+	},
+	"scripts": {
+		"start": "docsify start . --config ./ssr.config.js",
+		"deploy": "now -p"
+	},
+	"now": {
+		"alias": "docsify",
+		"env": {
+			"NODE_ENV": "production",
+			"DEBUG": "docsify"
+		}
+	},
+	"devDependencies": {
+		"docsify-cli": "^4.4.4",
+		"now": "^21.0.1"
+	}
+}
